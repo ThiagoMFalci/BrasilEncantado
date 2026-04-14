@@ -31,10 +31,6 @@ A proposta é simular um site de uma agência de turismo fictícia, oferecendo i
 ## 📱 Responsividade
 O site possui responsividade básica, adaptando-se a diferentes tamanhos de tela.
 
-## Integrantes do Grupo
-- Thiago Mendonça Falci
-- Matheus Raspante
-- Tomas Francisco
 
 ## 🚀 Objetivo Final
 Oferecer uma experiência agradável ao usuário, incentivando a exploração das belezas e diversidade cultural do Brasil.
@@ -42,3 +38,8 @@ Oferecer uma experiência agradável ao usuário, incentivando a exploração da
 ---
 
 💡 Projeto desenvolvido para fins educacionais.
+
+## Integrantes do Grupo
+- Thiago Mendonça Falci
+- Matheus Raspante
+- Tomas Francisco
