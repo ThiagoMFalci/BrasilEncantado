@@ -1,11 +1,19 @@
-.footer {
+body {
+    height: auto;
+    font-family: "Public Sans Web",sans-serif;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.logo  {
     display: flex;
-    align-items: center ;
-    align-content:end ;
-    text-align: center;
+    font-size: large;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     color: #F8FAFC;
-    background-color: #0F172A;
+    
     bottom: 0;
 }
 
@@ -62,9 +70,83 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    min-height: 100vh;
+
+
+.bra {
+    color: rgb(12, 8, 249);
+}
+
+.enca {
+    color: rgb(21, 222, 21);
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.057);
+    flex-direction: column;
+    display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    bottom: 0;
+    height: auto;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+}
+
+.contato {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.074);
+}
+
+.social {
+    display: flex;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+
+
+}
+
+.telefone {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+
+.footer_name {
+    display: flex;
+    text-align: start;
+    align-items: start;
+    justify-content: center;
+    flex-direction:column;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+    gap: 8px;
+}
+.footer_name a {
+    text-decoration: none;
+    color: #444;
+}
+
+.footer_name li {
+    padding: 8px 0;
+}
+
+.footer_name ul {
     margin: 0;
-    background: linear-gradient(135deg, #00115c 50%, #002ba1 100%);
-    color: #f8fafc;
+    padding: 0;
+    list-style:none ;
+}
+
+.footer_name p {
+    margin: 0;
 }
