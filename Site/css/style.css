@@ -5,20 +5,15 @@ body {
     margin: 0;
 }
 
-.logo {
-    display: flex;
-    font-size: large;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #F8FAFC;
-    bottom: 0;
-}
-
 .nav {
     background-color: #fff;
-    padding: 0px 10px;
-    box-shadow: 0px 0px 38px 8px #000000;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .nav ul {
@@ -34,19 +29,15 @@ body {
     padding: 5px;
     width: 95px;
     height: 90%;
-    color: #3688B5;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s transform;
 }
 
-.nav ul li:hover {
-    border: 1px solid #3688B5;
-}
 
 .nav ul li a {
-    color: #3688B5;
+    color: #444;
     text-decoration: none;
     font-size: 18px;
 }
@@ -55,9 +46,63 @@ body {
     color: #FACC15;
 }
 
+.menu {
+    display: flex;
+    gap: 12px;
+    width: auto;
+    cursor: pointer;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+
+.menu-hamburguer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 25px; 
+    height: 20px; 
+    padding: 10px ;
+    border-radius: 10px;
+}
+
+.barrinha {
+    width: 100%;
+    height: 4px; 
+    background-color: #333; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+}
+
+.menu:hover .menu-hamburguer  {
+    background-color: #6f72724b; 
+}
+
 .links {
     display: flex;
     align-items: center;
+}
+
+.links_login {
+    background-color: #e2e4e9; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;  
+    height: 45px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+}
+
+.links_login:hover {
+    background-color: #d0d3d9;}
+
+.links_login img {
+    padding-top: 6px ;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
 }
 
 .titulo {
@@ -65,8 +110,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3688B5;
-    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo a {
+    color: #444;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 .bra {
@@ -75,63 +124,6 @@ body {
 
 .enca {
     color: rgb(21, 222, 21);
-}
-
-.footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.057);
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    font-weight: 500;
-    color: #444;
-    font-size: 14px;
-}
-
-.contato {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    height: 100px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.074);
-}
-
-.social {
-    display: flex;
-    gap: 20px;
-}
-
-.telefone {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 20px;
-}
-
-.footer_name {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 150px;
-    gap: 8px;
-}
-
-.footer_name a {
-    text-decoration: none;
-    color: #444;
-}
-
-.footer_name li {
-    padding: 8px 0;
-}
-
-.footer_name ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer_name p {
-    margin: 0;
 }
 
 .card {
@@ -205,3 +197,84 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.057);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.074);
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+.social_media{
+    display: flex;
+    gap: 30px;
+
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.footer_name {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 150px;
+    gap: 8px;
+}
+
+.footer_name a {
+    text-decoration: none;
+    color: #444;
+}
+
+.footer_name li {
+    padding: 8px 0;
+}
+
+.footer_name ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer_name p {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: start;
+    color: #444;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.086);
+    padding-top: 20px;
+}
+
+
