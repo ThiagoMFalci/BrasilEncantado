@@ -57,6 +57,15 @@ main {
     padding: 20px;
 }
 
+.feature {
+
+    width: 60%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .destinos {
     display: flex;
     flex-direction: column;
@@ -215,20 +224,17 @@ main {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-width: 350px;
     max-width: 350px;
     margin: 20px;
     overflow: hidden;
-    background-color: #102A43;
-    border: #0f3c9d solid 1px;
-    border-radius: 5px;
     text-decoration: none;
     color: inherit;
-    -webkit-box-shadow: 5px 5px 22px -11px #000000; 
-    box-shadow: 5px 5px 22px -11px #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
+    gap: 10px;
+    margin-left: 0px;
 }
 
 .links_login {
