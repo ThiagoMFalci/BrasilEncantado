@@ -91,15 +91,6 @@ main {
     text-align: justify;
 }
 
-.destino1 .overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 60%;
-    color: #000;
-    text-align: justify;
-}
 
 .destino2 .overlay {
     display: flex;
@@ -122,12 +113,7 @@ main {
 }
 
 /* CARDS */
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
+
 
 /* Navegação */
 .nav {
@@ -135,15 +121,18 @@ main {
     top: 0;
     width: 100%;
     padding: 0px 10px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px 1px #000000;
+    background-color: #fefdfd;
+    
     z-index: 1000;
     display: flex;
     gap: 12px;
-    height: 70px;
+    height: 65px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.163);
+
 }
 
 .nav ul {
@@ -181,25 +170,29 @@ main {
     transform: scale(1.1);
 }
 
-.menu {
-    display: flex;
-    gap: 12px;
-    width: auto;
-    cursor: pointer;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-}
-
 .menu-hamburguer {
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
     width: 25px; 
-    height: 20px; 
-    padding: 10px ;
+    height: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
     border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    
+    padding: 10px;
+
 }
+
+.menu-hamburguer:hover {
+
+    background-color: #44444464;
+
+}
+
+
 
 .barrinha {
     width: 100%;
@@ -209,9 +202,58 @@ main {
     transition: all 0.3s ease; 
 }
 
-.menu:hover .menu-hamburguer  {
-    background-color: #6f72724b; 
+#check-menu {
+  display: none; 
 }
+
+.sidebar {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 65px);
+  background-color: #ffffff;
+  padding-top: 0; /* Dá um espaço em cima para não cobrir as 3 barrinhas */
+  
+  /* O SEGREDO DO CSS: Esconde a sidebar fora da tela */
+  transform: translateX(-100%); 
+  transition: transform 0.4s ease-in-out; /* Animação suave */
+  z-index: 999; /* Fica abaixo do botão, mas acima do resto do site */
+  
+  border: 1px solid rgba(0, 0, 0, 0.181);    
+  
+}
+
+.sidebar a {
+  display: block;
+  color: #444;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  margin: 2px;
+  border-radius: 10px;
+  
+}
+
+.sidebar nav {
+    border-bottom: 1px solid #00000028;
+}
+
+.sidebar a:hover {
+  background-color: #4444441e;
+}
+
+   /* 4. A MÁGICA: O EVENTO DE CLIQUE SÓ COM CSS */
+
+/* Quando o checkbox estiver marcado (:checked), ache a .sidebar e empurre pra tela */
+#check-menu:checked ~ .sidebar {
+  transform: translateX(0); /* Traz a sidebar de volta pra tela (posição 0) */
+}
+
+/* Opcional: Mudar a cor das barrinhas pra branco quando a sidebar preta abrir */
+
+
 
 .links {
     display: flex;
@@ -232,7 +274,7 @@ main {
 }
 
 .links_login {
-    background-color: #e2e4e9; 
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,12 +296,12 @@ main {
 }
 
 .titulo {
-    margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     color: #3688B5;
+    gap: 10px;transition: transform 0.4s ease-in-out;
 }
 
 .titulo a {
@@ -267,6 +309,12 @@ main {
     text-decoration: none;
     font-size: 25px;
 }
+
+.titulo h1 {
+    margin: 0;
+    line-height: 1;
+}
+
 
 .bra {
     color: rgb(12, 8, 249);
@@ -384,8 +432,6 @@ main {
     gap: 30px;
 
 }
-
-
 
 .social img {
     width: 25px;
