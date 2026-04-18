@@ -16,6 +16,10 @@ main {
     justify-content: center;
 }
 
+.espaco {
+    height: 70px; /* Altura do espaço para a barra de navegação fixa */
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -24,7 +28,6 @@ main {
     margin-bottom: 40px;
     background-color: #0f3c9d;
     position: relative;
-    margin-top: 103px;
 }
 
 .hero .text {
