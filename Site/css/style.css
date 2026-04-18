@@ -446,3 +446,17 @@ footer {
     }
 }
 
+h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 12px;
+    font-size: 18px;
+    color: #F8FAFC;
+    text-align: start;
+
+    background: linear-gradient(135deg, #00115c 50%, #002ba1 100%);
+    margin: 0;
+}
