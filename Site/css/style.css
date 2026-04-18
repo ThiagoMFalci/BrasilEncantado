@@ -224,7 +224,8 @@ main {
     display: flex;
     flex-direction: column;
     min-width: 350px;
-
+    max-width: 450px;
+    flex: 0 0 calc(33.333% - 20px);
     margin: 20px;
     overflow: hidden;
 
