@@ -1,5 +1,4 @@
 
-/* Estilos base */
 body {
     margin: 0;
     min-height: 100vh;
@@ -8,7 +7,6 @@ body {
     background-color: #fff;
 }
 
-/* Layout principal */
 main {
     display: flex;
     flex-direction: column;
@@ -17,7 +15,6 @@ main {
 }
 
 .espaco {
-    height: 70px; /* Altura do espaço para a barra de navegação fixa */
     height: 70px; 
 }
 
@@ -49,7 +46,6 @@ main {
     mask-image: linear-gradient(to right, transparent 0%, black 60%);
 }
 
-/* FEATURES */
 
 .features {
     display: flex;
@@ -123,10 +119,7 @@ main {
     box-shadow: 5px 5px 22px -11px #000000;
 }
 
-/* CARDS */
 
-
-/* Navegação */
 .nav {
     position: fixed;
     top: 0;
@@ -203,8 +196,6 @@ main {
 
 }
 
-
-
 .barrinha {
     width: 100%;
     height: 4px; 
@@ -224,13 +215,9 @@ main {
   width: 250px;
   height: calc(100vh - 65px);
   background-color: #ffffff;
-  padding-top: 0; /* Dá um espaço em cima para não cobrir as 3 barrinhas */
   padding-top: 0; 
   
-  /* O SEGREDO DO CSS: Esconde a sidebar fora da tela */
   transform: translateX(-100%); 
-  transition: transform 0.4s ease-in-out; /* Animação suave */
-  z-index: 999; /* Fica abaixo do botão, mas acima do resto do site */
   transition: transform 0.4s ease-in-out; 
   z-index: 999; 
   
@@ -258,17 +245,10 @@ main {
   background-color: #4444441e;
 }
 
-   /* 4. A MÁGICA: O EVENTO DE CLIQUE SÓ COM CSS */
 
-/* Quando o checkbox estiver marcado (:checked), ache a .sidebar e empurre pra tela */
 #check-menu:checked ~ .sidebar {
-  transform: translateX(0); /* Traz a sidebar de volta pra tela (posição 0) */
   transform: translateX(0); 
 }
-
-/* Opcional: Mudar a cor das barrinhas pra branco quando a sidebar preta abrir */
-
-
 
 .links {
     display: flex;
@@ -593,7 +573,6 @@ main {
 }
 
 .bra {
-    color: rgb(12, 8, 249);
     color: #DF5E44;
 }
 
@@ -601,7 +580,6 @@ main {
     color: rgb(21, 222, 21);
 }
 
-/* Componente Card */
 
 .cards {
     display: flex;
@@ -677,7 +655,6 @@ main {
     margin: 0;
 }
 
-/* Rodapé */
 
 .footer {
     display: flex;
@@ -765,7 +742,6 @@ footer {
     padding-top: 20px;
 }
 
-/* ========================= */
 
 @media (max-width: 1150px) {
     .hero {
