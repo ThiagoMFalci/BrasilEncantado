@@ -18,6 +18,7 @@ main {
 
 .espaco {
     height: 70px; /* Altura do espaço para a barra de navegação fixa */
+    height: 70px; 
 }
 
 .hero {
@@ -49,6 +50,7 @@ main {
 }
 
 /* FEATURES */
+
 .features {
     display: flex;
     flex-direction: column;
@@ -223,11 +225,14 @@ main {
   height: calc(100vh - 65px);
   background-color: #ffffff;
   padding-top: 0; /* Dá um espaço em cima para não cobrir as 3 barrinhas */
+  padding-top: 0; 
   
   /* O SEGREDO DO CSS: Esconde a sidebar fora da tela */
   transform: translateX(-100%); 
   transition: transform 0.4s ease-in-out; /* Animação suave */
   z-index: 999; /* Fica abaixo do botão, mas acima do resto do site */
+  transition: transform 0.4s ease-in-out; 
+  z-index: 999; 
   
   border: 1px solid rgba(0, 0, 0, 0.181);    
   
@@ -258,6 +263,7 @@ main {
 /* Quando o checkbox estiver marcado (:checked), ache a .sidebar e empurre pra tela */
 #check-menu:checked ~ .sidebar {
   transform: translateX(0); /* Traz a sidebar de volta pra tela (posição 0) */
+  transform: translateX(0); 
 }
 
 /* Opcional: Mudar a cor das barrinhas pra branco quando a sidebar preta abrir */
@@ -321,9 +327,274 @@ main {
     line-height: 1;
 }
 
+.parallax-hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://www.mercadoeeventos.com.br/wp-content/uploads/2016/07/140401164750-brazil-salvador-horizontal-large-gallerype.jpg);
+  background-attachment: fixed; 
+  background-position: center;
+  background-size: cover;
+  
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.parallax-conteudo h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #DF5E44 ;
+}
+
+.parallax-conteudo p {
+  font-size: 22px;
+}
+
+.secao-experiencias {
+  background-color: #E8E8E8; 
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-secao {
+  text-align: center;
+  color: #DF5E44;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.container-cards-duplos {
+  display: flex;
+  gap: 30px; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+
+.card-duplo {
+  flex: 1; 
+  background-color: #F4F4F4; 
+  border-top: 4px solid #DF5E44; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.gif-topo {
+  width: 100%;
+  height: 280px; 
+  object-fit: cover; 
+  display: block; 
+}
+
+
+.conteudo-baixo {
+  padding: 0 40px 40px 40px; 
+  text-align: center;
+  position: relative;
+}
+
+.icone-meio {
+  width: 60px;
+  height: 60px;
+  background-color: #DF5E44; 
+  color: white; 
+  font-size: 24px;
+  
+  border: 4px solid #F4F4F4; 
+  border-radius: 50%; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  margin-top: -34px; 
+}
+
+
+.conteudo-baixo h3 {
+  color: #DF5E44; 
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 1px; 
+}
+
+.conteudo-baixo p {
+  color: #666; 
+  line-height: 1.6;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .container-cards-duplos {
+    flex-direction: column; 
+  }
+}
+
+.depoimentos {
+  background-color: #F8F9FA;
+  padding: 60px 0;
+  overflow: hidden; 
+}
+
+.titulo-depoimentos {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color:  #DF5E44;
+}
+
+.carrossel-loop {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.trilha-cards {
+  display: inline-flex;
+  gap: 30px;
+  animation: deslizarEsquerdaDireita 20s linear infinite;
+  padding-left: 30px; 
+}
+
+
+.card-comentario {
+  width: 320px;
+  background: #FFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  flex-shrink: 0; 
+}
+
+.img-lugar {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.conteudo-comentario {
+  padding: 20px;
+}
+
+.estrelas {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.conteudo-comentario p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.conteudo-comentario span {
+  font-weight: bold;
+  color:  #DF5E44;
+}
+
+
+@keyframes deslizarEsquerdaDireita {
+  0% 
+{
+    transform: translateX(calc(-50% - 15px)); 
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bloco-info, .bloco-info.reverso {
+    flex-direction: column; 
+  }
+}
+
+.secao-editorial {
+ 
+  background-color: #FBF9F6; 
+  padding: 80px 20px;
+  color: #333;
+
+  border-bottom: 1px solid #df5e444c;
+}
+
+.editorial-container {
+  max-width: 700px; 
+  margin: 0 auto;
+}
+
+.editorial-tag {
+  color: #DF5E44; 
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.editorial-titulo {
+  font-family: 'Georgia', serif; 
+  font-size: 40px;
+  text-align: center;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.editorial-texto p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8; 
+  margin-bottom: 20px;
+  text-align: justify; 
+}
+
+.paragrafo-inicio::first-letter {
+  font-family: 'Georgia', serif;
+  font-size: 85px; 
+  color: #DF5E44; 
+  float: left; 
+  line-height: 0.85; 
+  margin-top: 8px;
+  margin-right: 12px; 
+}
+
+.citacao-destaque {
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+  font-style: italic; 
+  color: #DF5E44;
+  text-align: center;
+  
+  
+  border-top: 2px solid #DF5E44;
+  border-bottom: 2px solid #DF5E44;
+  
+  padding: 35px 0; 
+  margin: 40px -40px; 
+}
+
+
+@media (max-width: 768px) {
+  .editorial-titulo { font-size: 32px; }
+  
+  
+  .citacao-destaque { 
+    margin: 40px 0; 
+    font-size: 22px;
+  }
+}
 
 .bra {
     color: rgb(12, 8, 249);
+    color: #DF5E44;
 }
 
 .enca {
@@ -331,6 +602,7 @@ main {
 }
 
 /* Componente Card */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -406,6 +678,7 @@ main {
 }
 
 /* Rodapé */
+
 .footer {
     display: flex;
     flex-direction: column;
